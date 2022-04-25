@@ -13,6 +13,6 @@
 
     // $from_email = "admin@mail.com";
     // $reply_email = "admin@mail.com";
-    $root_directory = "/gis-implan";
+    $root_directory = "";
     // include "php_functions.php"
 ?>
