@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>GIS IMPLAN Tijuana</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="css/bootstrap.css" />
+        <link
+          href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet"
+        />
+        <link
+          href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+          rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+      </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark ">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="resources/logos/implan_XXIV_blanco.svg" alt="Logo IMPLAN Tijuana" width="160" class="d-inline-block align-text-top">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                  <a class="nav-link" href="#">Ver Mapa</a>
+                  <a class="nav-link" href="#">Estadísticas</a>
+                  <a class="nav-link" href="#">Católogo SIG</a>
+                  <a class="nav-link" href="#">Tramites & Servicios</a>
+                  <a class="nav-link" href="#">Recursos adicionales</a>
+                  <a class="nav-link" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight">
+                      <img src="resources/icons/account.svg" alt="Imagen de perfil" width="40px">
+                  </a>
+                </div>
+            </div>
+          </nav>
+          
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header d-block d-sm-none">
+              <h5 id="offcanvasRightLabel"> </h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body quickmenu d-flex flex-column gap-2">
+              <div class="quickmenu-element">
+                <div class="userinfo">
+                    <img src="https://via.placeholder.com/150" alt="Imagen de perfil" height="80px">
+                    <div class="userinfo-details">
+                      <p>José Armando Lerma Gutiérrez</p>
+                      <p>Puesto</p>
+                    </div>
+                    <i class="material-icons-outlined icon-settings">
+                      settings
+                    </i>
+                </div>
+              </div>
+              <div class="quickmenu-element">
+                <div class="quickmenu-block">
+                  <div class="block-title d-flex flex-row justify-content-between align-items-center border-bottom p-1">
+                    <h4>Notificaciones</h4>
+                    <i class="material-icons-outlined icon-settings">
+                      settings
+                    </i>
+                  </div>
+                  <div class="block-listContainer">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                          <button class="accordion-button collapsed p-1" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            <i class="material-icons-outlined">
+                              circle
+                            </i>
+                            <p class="m-0">Trámite #654321, documento "Formato de inscrición" no valido</p> 
+                          </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body d-flex p-0">
+                            <button class="btn btn-primary flex-grow-1">Revisar</button>
+                            <button class="btn btn-danger flex-grow-1">Eliminar</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                          <button class="accordion-button collapsed p-1" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            <i class="material-icons-outlined">
+                              circle
+                            </i>
+                            <p class="m-0">Trámite #654321, documento "Formato de inscrición" no valido</p> 
+                          </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body d-flex p-0">
+                            <button class="btn btn-primary flex-grow-1">Revisar</button>
+                            <button class="btn btn-danger flex-grow-1">Eliminar</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                          <button class="accordion-button collapsed p-1" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            <i class="material-icons-outlined">
+                              circle
+                            </i>
+                            <p class="m-0">Trámite #654321, documento "Formato de inscrición" no valido</p> 
+                          </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body d-flex p-0">
+                            <button class="btn btn-primary flex-grow-1">Revisar</button>
+                            <button class="btn btn-danger flex-grow-1">Eliminar</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingFour">
+                          <button class="accordion-button collapsed p-1" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                            <i class="material-icons-outlined">
+                              circle
+                            </i>
+                            <p class="m-0">Trámite #654321, documento "Formato de inscrición" no valido</p> 
+                          </button>
+                        </h2>
+                        <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body d-flex p-0">
+                            <button class="btn btn-primary flex-grow-1">Revisar</button>
+                            <button class="btn btn-danger flex-grow-1">Eliminar</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="block-bottom p-1">
+                    <a href="#">Ver todo</a>
+                  </div>
+                </div>
+              </div>
+              <div class="quickmenu-element">
+                <div class="quickmenu-block">
+                  <div class="block-title d-flex flex-row justify-content-between align-items-center border-bottom p-1">
+                    <h4>Trámites</h4>
+                    <i class="material-icons-outlined icon-settings">
+                      settings
+                    </i>
+                  </div>
+                  <div class="block-listContainer">
+                    <div class="tramite d-flex align-items-center">
+                      <i class="material-icons-outlined">
+                        circle
+                      </i>
+                      <p class="m-0">Trámite #654321, documento "Formato de inscrición" no valido</p> 
+                    </div>
+                    <div class="tramite d-flex align-items-center">
+                      <i class="material-icons-outlined">
+                        circle
+                      </i>
+                      <p class="m-0">Trámite #654321, documento "Formato de inscrición" no valido</p> 
+                    </div>
+                    <div class="tramite d-flex align-items-center">
+                      <i class="material-icons-outlined">
+                        circle
+                      </i>
+                      <p class="m-0">Trámite #654321, documento "Formato de inscrición" no valido</p> 
+                    </div>
+                    <div class="tramite d-flex align-items-center">
+                      <i class="material-icons-outlined">
+                        circle
+                      </i>
+                      <p class="m-0">Trámite #654321, documento "Formato de inscrición" no valido</p> 
+                    </div>
+                  </div>
+                  <div class="block-bottom p-1">
+                    <a href="#">Ver todo</a>
+                  </div>
+                </div>
+
+              </div>
+              <div class="quickmenu-element">
+                <div class="tramite-buttons d-flex flex-column gap-1">
+                  <button class="btn btn-secondary d-flex justify-content-between align-items-center">
+                    Comenzar nuevo trámite
+                    <i class="material-icons-outlined">
+                      add_circle_outline
+                    </i>
+                  </button>
+                  <button class="btn btn-secondary d-flex justify-content-between align-items-center">
+                    Ver trámites en mapa
+                    <i class="material-icons-outlined">
+                      visibility
+                    </i>
+                  </button>
+                </div>
+              </div>
+              <div class="quickmenu-element text-center">
+                <a href="#">Cerrar sesión</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-md main-container ">
+            <div class="col-md-10 border border-danger mx-auto">
+                Hola
+            </div>
+        </div>
+        <script src="js/bootstrap.bundle.js"></script>
+    </body>
+</html>

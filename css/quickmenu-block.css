@@ -1,0 +1,14 @@
+.quickmenu-block {
+  max-block-size: 12rem;
+}
+
+.block-bottom {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.block-listContainer {
+  max-block-size: 6rem;
+  overflow: auto;
+}

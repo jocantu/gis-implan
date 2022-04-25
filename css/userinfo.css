@@ -1,0 +1,11 @@
+.userinfo {
+  display: flex;
+  position: relative;
+  gap: 1rem;
+}
+
+.userinfo i {
+  position: absolute;
+  top: 0;
+  right: 0;
+}

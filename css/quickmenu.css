@@ -1,0 +1,9 @@
+@import "./userinfo.css";
+@import "./quickmenu-block.css";
+
+.quickmenu {
+  gap: 1rem;
+}
+
+.quickmenu-element {
+}
